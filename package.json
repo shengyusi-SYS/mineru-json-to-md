@@ -1,0 +1,38 @@
+{
+  "name": "mineru-json-to-md",
+  "version": "0.1.0",
+  "description": "Convert MinerU layout.json to Markdown with embedded images and rich formatting",
+  "module": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "mineru-json-to-md": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "test": "bun run src/index.ts layout.json output.md"
+  },
+  "keywords": [
+    "mineru",
+    "pdf",
+    "markdown",
+    "converter",
+    "ocr",
+    "json-to-md"
+  ],
+  "author": "MinerU Converter Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mineru-json-to-md"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
